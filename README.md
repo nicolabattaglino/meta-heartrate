@@ -17,8 +17,8 @@ IMAGE_INSTALL_append = “ hbmod”
 KERNEL_MODULE_AUTOLOAD += “hbmod”
 ```
 
-Add this line to the bblayers.conf file to add the layer
-`/opt/poky/meta-heartrate \`
+Add the layer with the command
+`bitbake-layers add-layer ../meta-heartrate/`
 
 Go back in the poky main folder and build with the command 
 `bitbake core-image-minimal`
