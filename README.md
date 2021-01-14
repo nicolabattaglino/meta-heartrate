@@ -6,7 +6,9 @@ Copy into the poky directory the layer meta-heartrate with
 
 `git clone https://github.com/nicolabattaglino/meta-heartrate.git`
 
-Set up the environment   `source oe-init build-env build_qemuarm`
+Set up the environment   
+
+`source oe-init build-env build_qemuarm`
 
 Move to the folder `cd build_qemuarm/conf`
 
@@ -17,9 +19,11 @@ IMAGE_INSTALL_append = “ hbmod”
 KERNEL_MODULE_AUTOLOAD += “hbmod”
 ```
 Go back in the poky main folder and add the layer with the command
+
 `bitbake-layers add-layer ../meta-heartrate/`
 
 Now build with the command 
+
 `bitbake core-image-minimal`
 
 Open qemuarm and use `heartbeat` command to test the application
