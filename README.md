@@ -1,5 +1,6 @@
-# OSES ASSIGNMENT ON EMBEEDED LINUX Heart Rate Monitor
-# Steps to test the application
+# OSES ASSIGNMENT ON EMBEEDED LINUX: Heart Rate Monitor
+
+# - Steps to test the application
 
 Copy into the poky directory the layer meta-heartrate with
 
