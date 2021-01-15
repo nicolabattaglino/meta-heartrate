@@ -31,7 +31,7 @@ Open qemuarm and use `heartbeat` command to test the application
 # - Heartbeat Application
 
 The main function create a thread and performs an endless loop, calling the readAndConvert function every 20ms using the usleep() function, in order to respect the sampling frequency of 50Hz.
-The ReadAndConvert function perform a read from the driver. It returns a value from the ppg array (declared in “data.h”), in the buffer, convert the value and then writes it in the pipe; at this point the pipe is full and so the thread reads from the pipe the value and stores it in the array. The pipe is useful to synchronise the main and the thread, because it’a blocking pipe.
+The ReadAndConvert function perform a read from the driver that returns a value from the ppg array (declared in “data.h”), using the buffer. The function convert the value and then writes it in the pipe; at this point the pipe is full and so the thread reads from the pipe the value and stores it in the array. The pipe is useful to synchronise the main and the thread, because it’a blocking pipe.
 When the application reaches 2048 reading, the thread performs a 2048-points FFT, compute the PSD and prints the bpm value.
 
 
