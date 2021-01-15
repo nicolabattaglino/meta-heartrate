@@ -10,7 +10,7 @@
 
 `source oe-init-build-env build_qemuarm`
 
-- Move to the folder /conf`
+- Move to the folder /conf
 
 - Add these lines to the local.conf file
 ```
