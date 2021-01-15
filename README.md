@@ -10,7 +10,7 @@
 
 `source oe-init-build-env build_qemuarm`
 
-- Move to the folder /conf
+- Move to the folder /conf (under the /build_qemuarm folder)
 
 - Add these lines to the local.conf file
 ```
@@ -18,7 +18,7 @@ IMAGE_INSTALL_append = " hbmod"
 KERNEL_MODULE_AUTOLOAD += "hbmod"
 IMAGE_INSTALL_append = " heartbeat"
 ```
-- Go back in the /build_qemuarm  folder and add the layer with the command
+- Go back in the /build_qemuarm folder and add the layer with the command
 
 `bitbake-layers add-layer ../meta-heartrate/`
 
