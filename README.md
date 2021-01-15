@@ -10,9 +10,8 @@
 
 `source oe-init-build-env build_qemuarm`
 
-- Move to the folder /conf (under the /build_qemuarm folder)
+- Move to the folder /conf (under the /build_qemuarm folder) and these lines to the local.conf file
 
-- Add these lines to the local.conf file
 ```
 IMAGE_INSTALL_append = " hbmod"
 KERNEL_MODULE_AUTOLOAD += "hbmod"
