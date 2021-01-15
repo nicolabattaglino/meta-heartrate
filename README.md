@@ -14,9 +14,9 @@
 
 - Add these lines to the local.conf file
 ```
-IMAGE_INSTALL_append = “ heartbeat”
-IMAGE_INSTALL_append = “ hbmod”
-KERNEL_MODULE_AUTOLOAD += “hbmod”
+IMAGE_INSTALL_append = " hbmod"
+KERNEL_MODULE_AUTOLOAD += "hbmod"
+IMAGE_INSTALL_append = " heartbeat"
 ```
 - Go back in the /build_qemuarm  folder and add the layer with the command
 
