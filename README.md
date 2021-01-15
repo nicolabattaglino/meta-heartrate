@@ -8,9 +8,9 @@
 
 - Set up the environment   
 
-`source oe-init build-env build_qemuarm`
+`source oe-init-build-env build_qemuarm`
 
-- Move to the folder `cd build_qemuarm/conf`
+- Move to the folder /conf`
 
 - Add these lines to the local.conf file
 ```
