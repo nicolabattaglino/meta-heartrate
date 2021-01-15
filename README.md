@@ -18,7 +18,7 @@ IMAGE_INSTALL_append = “ heartbeat”
 IMAGE_INSTALL_append = “ hbmod”
 KERNEL_MODULE_AUTOLOAD += “hbmod”
 ```
-- Go back in the poky main folder and add the layer with the command
+- Go back in the /build_qemuarm  folder and add the layer with the command
 
 `bitbake-layers add-layer ../meta-heartrate/`
 
